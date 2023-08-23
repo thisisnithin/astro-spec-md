@@ -33,8 +33,7 @@ fs.readdir(srcDir, (err, files) => {
         trailingComma: 'all',
       });
 
-      fs.writeFileSync(targetDir + '/' + basename + '.html', formatted);
-      fs.writeFileSync(targetDir + '/' + basename + '_as' + '.astro', formatted);
+      fs.writeFileSync(targetDir + '/' + basename + '.astro', formatted);
     }
   });
 });
