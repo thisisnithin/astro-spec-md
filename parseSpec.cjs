@@ -34,6 +34,7 @@ fs.readdir(srcDir, (err, files) => {
       });
 
       fs.writeFileSync(targetDir + '/' + basename + '.html', formatted);
+      fs.writeFileSync(targetDir + '/' + basename + '_as' + '.astro', formatted);
     }
   });
 });
